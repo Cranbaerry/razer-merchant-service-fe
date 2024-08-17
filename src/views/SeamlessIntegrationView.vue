@@ -2,7 +2,7 @@
   <teleport to="head">
     <component :is="'script'" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" async />
     <component :is="'script'"
-      src="https://sandbox.merchant.razer.com/RMS/API/seamless/latest/js/MOLPay_seamless.deco.js" async />
+      src="https://pay.merchant.razer.com/RMS/API/seamless/3.28/js/MOLPay_seamless.deco.js" async />
   </teleport>
 
   <div class="about">
