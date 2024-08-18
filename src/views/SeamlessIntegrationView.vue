@@ -2,8 +2,8 @@
 export default {
   mounted() {
     const scripts = [
-      "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js",
-      "https://sandbox.merchant.razer.com/RMS/API/seamless/3.28/js/MOLPay_seamless.deco.js"
+      "https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js",
+      "https://sandbox.merchant.razer.com/RMS/API/seamless/latest/js/MOLPay_seamless.deco.js"
     ];
     scripts.forEach(script => {
       let tag = document.head.querySelector(`[src="${script}"`);
