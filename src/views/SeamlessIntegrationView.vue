@@ -77,6 +77,7 @@ const fetchOrderDetails = async () => {
       await nextTick(); // Ensure DOM is updated
       const visaButton:HTMLButtonElement | null = document.querySelector('[data-toggle="molpayseamless"]');
       if (visaButton) {
+        console.log(orderDetails);
         visaButton.click();
       }
     }
