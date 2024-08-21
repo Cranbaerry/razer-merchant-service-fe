@@ -185,7 +185,7 @@ onMounted(() => {
         :data-mpsbill_email="orderDetails.mpsbill_email" :data-mpsbill_mobile="orderDetails.mpsbill_mobile"
         :data-mpsbill_desc="orderDetails.mpsbill_desc" :data-mpsvcode="orderDetails.mpsvcode"
         :data-mpscurrency="orderDetails.mpscurrency" :data-mpscallbackurl="orderDetails.mpscallbackurl"
-        :data
+        :data-mpsreturnurl="orderDetails.mpsreturnurl" :data-mpsnotifyurl="orderDetails.mpscallbackurl"
         class="p-mt-3" />
     </div>
   </div>
