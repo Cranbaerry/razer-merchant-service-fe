@@ -32,6 +32,8 @@ const orderDetails = ref({
   mpslangcode: 'en',
   mpstimerbox: '#counter',
   mpscallbackurl: '',
+  mpsreturnurl: '',
+  mpsnotifyurl: '',
 })
 
 const isLoading = ref(false); // Track loading state
@@ -68,6 +70,8 @@ const fetchOrderDetails = async () => {
       orderDetails.value.mpsvcode = order.mpsvcode
       orderDetails.value.mpscurrency = order.mpscurrency
       orderDetails.value.mpscallbackurl = order.mpscallbackurl
+      orderDetails.value.mpsreturnurl = order.mpsreturnurl
+      orderDetails.value.mpsnotifyurl = order.mpsnotifyurl
 
       // Auto-click the button
       await nextTick(); // Ensure DOM is updated
@@ -181,6 +185,7 @@ onMounted(() => {
         :data-mpsbill_email="orderDetails.mpsbill_email" :data-mpsbill_mobile="orderDetails.mpsbill_mobile"
         :data-mpsbill_desc="orderDetails.mpsbill_desc" :data-mpsvcode="orderDetails.mpsvcode"
         :data-mpscurrency="orderDetails.mpscurrency" :data-mpscallbackurl="orderDetails.mpscallbackurl"
+        :data
         class="p-mt-3" />
     </div>
   </div>
