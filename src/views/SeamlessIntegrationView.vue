@@ -71,7 +71,7 @@ const fetchOrderDetails = async () => {
 
       // Auto-click the button
       await nextTick(); // Ensure DOM is updated
-      const visaButton = document.querySelector('[data-toggle="molpayseamless"]');
+      const visaButton:HTMLButtonElement | null = document.querySelector('[data-toggle="molpayseamless"]');
       if (visaButton) {
         visaButton.click();
       }
